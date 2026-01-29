@@ -24,12 +24,8 @@ function Navigation() {
       <div className="section-container">
         <div className="flex items-center justify-between h-16 md:h-20">
           <a href="/" className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-emerald-400 to-emerald-600 flex items-center justify-center">
-              <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-              </svg>
-            </div>
-            <span className="text-xl font-bold text-white">Pickd</span>
+            <img src="/logo-icon.svg" alt="Pickd" className="w-9 h-9" />
+            <span className="text-xl font-bold text-white">Pick<span className="text-orange-500">d</span></span>
           </a>
           
           <div className="hidden md:flex items-center gap-8">
@@ -882,12 +878,8 @@ function Footer() {
         <div className="grid md:grid-cols-4 gap-12 mb-12">
           <div className="md:col-span-2">
             <a href="/" className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-emerald-400 to-emerald-600 flex items-center justify-center">
-                <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                </svg>
-              </div>
-              <span className="text-xl font-bold text-white">Pickd</span>
+              <img src="/logo-icon.svg" alt="Pickd" className="w-9 h-9" />
+              <span className="text-xl font-bold text-white">Pick<span className="text-orange-500">d</span></span>
             </a>
             <p className="text-slate-400 max-w-sm mb-6">
               The operational system that connects customer feedback to fixes to measurable improvement. Not just insights—proof.
