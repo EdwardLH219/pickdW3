@@ -83,9 +83,12 @@ function HeroSection() {
               <span className="text-white">First</span>
             </h1>
             
-            <p className="mt-6 text-lg sm:text-xl text-slate-400 max-w-xl mx-auto lg:mx-0">
-              Transform scattered reviews into actionable insights. Understand what customers really think, 
-              fix what matters, and watch your ratings soar.
+            <p className="mt-4 text-xl sm:text-2xl text-slate-300 max-w-xl mx-auto lg:mx-0 font-medium">
+              Get more feet in store by listening to your customers.
+            </p>
+            
+            <p className="mt-4 text-lg text-slate-500 max-w-xl mx-auto lg:mx-0">
+              The only platform that closes the loop: identify issues, fix them, and <span className="text-emerald-400">prove it worked</span>.
             </p>
             
             <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
@@ -235,11 +238,11 @@ function ProblemSection() {
     {
       icon: (
         <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
         </svg>
       ),
-      title: 'Time Consuming',
-      description: 'Hours spent manually checking each platform, trying to understand what customers really think.',
+      title: 'Reports Without Action',
+      description: 'Generic tools give you dashboards and charts. But a report that sits in a drawer changes nothing.',
     },
     {
       icon: (
@@ -247,8 +250,8 @@ function ProblemSection() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
         </svg>
       ),
-      title: 'No Clear Direction',
-      description: 'Feedback without context. Which problems should you fix first? What will actually move the needle?',
+      title: 'No Operational Depth',
+      description: 'Horizontal platforms don\'t understand restaurants. Noise levels, wait times, parking—real ops issues get missed.',
     },
     {
       icon: (
@@ -256,8 +259,8 @@ function ProblemSection() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
         </svg>
       ),
-      title: 'No Way to Measure',
-      description: "You make changes but have no idea if they're working. Did that service training actually help?",
+      title: 'No Proof It Worked',
+      description: "You make changes but can't prove they helped. Did that staff training improve service scores? You'll never know.",
     },
   ]
 
@@ -329,20 +332,20 @@ function SolutionSection() {
           <div>
             <span className="inline-block text-emerald-400 text-sm font-semibold tracking-wider uppercase mb-4">The Solution</span>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
-              One dashboard.<br />
-              <span className="gradient-text">Crystal clear insights.</span>
+              Not just insights.<br />
+              <span className="gradient-text">A complete operational loop.</span>
             </h2>
             <p className="text-lg text-slate-400 mb-8">
-              Pickd aggregates reviews from every platform, analyzes sentiment and themes with AI, 
-              and tells you exactly what to fix—in order of impact.
+              Pickd isn't another dashboard. It's an operational system that connects what customers say 
+              to what you fix to <span className="text-white font-medium">measurable improvement</span>.
             </p>
             
             <div className="space-y-6">
               {[
-                { title: 'Unified Review Hub', description: 'All your reviews from every platform in one searchable, filterable dashboard.' },
-                { title: 'AI-Powered Analysis', description: 'Automatic sentiment scoring and theme detection. Know what customers love and hate.' },
-                { title: 'Prioritized Actions', description: 'Get recommendations ranked by impact. Fix high-severity issues first.' },
-                { title: 'Track Your Progress', description: 'See how your changes affect sentiment over time. Proof that your work is paying off.' },
+                { title: 'Identify Issues', description: 'AI analyzes every review, detects restaurant-specific themes like noise, wait times, and parking.' },
+                { title: 'Prioritize & Assign', description: 'Route kitchen issues to chefs, service issues to floor managers. The right fix to the right person.' },
+                { title: 'Track Completion', description: 'Built-in task management so nothing falls through the cracks. Know what was fixed and when.' },
+                { title: 'Prove It Worked', description: 'Before/after sentiment tracking shows exactly how your changes impacted customer perception.' },
               ].map((item, index) => (
                 <div key={index} className="flex gap-4">
                   <div className="flex-shrink-0 w-8 h-8 rounded-full bg-emerald-500/20 flex items-center justify-center">
@@ -437,38 +440,47 @@ function FeaturesSection() {
     {
       icon: (
         <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
         </svg>
       ),
-      title: 'Auto-Ingest Reviews',
-      description: 'Connect your platforms once. We pull new reviews automatically every night—or on demand.',
+      title: 'Restaurant-Native Themes',
+      description: 'Noise, toilets, wait times, parking, table turn, smoking areas—themes built for how restaurants actually operate.',
     },
     {
       icon: (
         <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
         </svg>
       ),
-      title: 'Theme Detection',
-      description: 'AI identifies what customers talk about: food, service, noise, parking, cleanliness, and 15+ more themes.',
+      title: 'Role-Based Routing',
+      description: 'Kitchen issues to head chef. Service to floor manager. Facilities to ops. The right problem to the right person.',
     },
     {
       icon: (
         <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
         </svg>
       ),
-      title: 'Sentiment Scoring',
-      description: "Every theme gets a 0-10 sentiment score. Instantly see what's working and what's broken.",
+      title: 'The Closed Loop',
+      description: "Alert → Recommendation → Task → Completion → Tracking. Once you're in the loop, you never want to leave.",
     },
     {
       icon: (
         <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
         </svg>
       ),
-      title: 'Smart Recommendations',
-      description: 'Get prioritized action items based on severity and impact. Know exactly what to fix first.',
+      title: 'Before/After Proof',
+      description: 'Mark a task complete, then watch that theme\'s sentiment over time. Hard evidence your fixes actually worked.',
+    },
+    {
+      icon: (
+        <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      ),
+      title: 'Operational Memory',
+      description: '"This issue was addressed in March 2024." Your compliance history lives in Pickd, not scattered notes.',
     },
     {
       icon: (
@@ -476,17 +488,8 @@ function FeaturesSection() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
         </svg>
       ),
-      title: 'Progress Tracking',
-      description: 'Mark tasks complete and watch sentiment shift. See before/after proof your changes work.',
-    },
-    {
-      icon: (
-        <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-        </svg>
-      ),
-      title: 'Beautiful Reports',
-      description: 'Export polished PDF reports for stakeholders, investors, or franchise owners. Look professional.',
+      title: 'Benchmark Your Performance',
+      description: 'Compare against similar restaurants by cuisine, price point, and format. Know where you stand.',
     },
   ]
 
@@ -494,12 +497,12 @@ function FeaturesSection() {
     <section id="features" className="py-24 md:py-32 bg-slate-900/30">
       <div className="section-container">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="inline-block text-emerald-400 text-sm font-semibold tracking-wider uppercase mb-4">Features</span>
+          <span className="inline-block text-emerald-400 text-sm font-semibold tracking-wider uppercase mb-4">Why Pickd is Different</span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
-            Everything you need to <span className="gradient-text">rise to the top</span>
+            An operational system, <span className="gradient-text">not just analytics</span>
           </h2>
           <p className="text-lg text-slate-400">
-            From ingestion to insights to action—Pickd handles the entire review intelligence lifecycle.
+            Generic reputation tools give you reports. Pickd gives you a workflow that embeds into daily operations.
           </p>
         </div>
         
@@ -526,78 +529,69 @@ function HowItWorksSection() {
   const steps = [
     {
       number: '01',
-      title: 'Connect Your Sources',
-      description: 'Link your Google Business, TripAdvisor, Facebook, and other review platforms. Takes 5 minutes.',
+      title: 'Detect the Issue',
+      description: 'AI identifies the problem from reviews. Not just "bad service"—but "slow drink refills during dinner rush."',
       visual: (
-        <div className="flex items-center justify-center gap-4">
-          {['Google', 'Trip', 'FB', 'HP'].map((p) => (
-            <div key={p} className="w-12 h-12 rounded-xl bg-slate-700/50 flex items-center justify-center text-xs font-bold text-slate-400 border border-slate-600/50">
-              {p}
-            </div>
-          ))}
-          <svg className="w-6 h-6 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-          </svg>
-          <div className="w-12 h-12 rounded-xl bg-emerald-500/20 flex items-center justify-center border border-emerald-500/30">
-            <svg className="w-6 h-6 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-            </svg>
+        <div className="bg-slate-800/30 rounded-lg p-3 text-left">
+          <div className="flex items-center gap-2 mb-1">
+            <div className="w-2 h-2 rounded-full bg-amber-400" />
+            <span className="text-xs text-amber-400">Service Issue</span>
           </div>
+          <p className="text-xs text-white">"Wait times during peak"</p>
+          <p className="text-xs text-slate-500">47 mentions • Trending up</p>
         </div>
       ),
     },
     {
       number: '02',
-      title: 'We Analyze Everything',
-      description: "Our AI reads every review, detects themes, scores sentiment, and identifies patterns you'd miss.",
+      title: 'Route to the Right Person',
+      description: 'Automatically assign to floor manager, head chef, or ops based on issue type. No more dropped balls.',
       visual: (
-        <div className="space-y-2">
-          {[
-            { label: 'Sentiment Analysis', progress: 100 },
-            { label: 'Theme Detection', progress: 85 },
-            { label: 'Pattern Recognition', progress: 60 },
-          ].map((item) => (
-            <div key={item.label} className="flex items-center gap-3">
-              <span className="text-xs text-slate-400 w-28">{item.label}</span>
-              <div className="flex-1 h-1.5 bg-slate-700 rounded-full overflow-hidden">
-                <div className="h-full bg-emerald-500 rounded-full animate-pulse" style={{ width: `${item.progress}%` }} />
-              </div>
-            </div>
-          ))}
+        <div className="flex items-center justify-center gap-2">
+          <div className="w-10 h-10 rounded-lg bg-slate-700/50 flex items-center justify-center text-xs text-slate-400 border border-slate-600/50">
+            Issue
+          </div>
+          <svg className="w-4 h-4 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+          </svg>
+          <div className="w-10 h-10 rounded-lg bg-emerald-500/20 flex items-center justify-center text-xs text-emerald-400 border border-emerald-500/30">
+            Sarah
+          </div>
         </div>
       ),
     },
     {
       number: '03',
-      title: 'Get Your Report',
-      description: 'Receive a clear intelligence report with your top issues, what people love, and what needs fixing.',
+      title: 'Fix & Mark Complete',
+      description: 'Track every action taken. "Added 2nd bartender for Friday rush—completed March 15."',
       visual: (
-        <div className="bg-slate-800/30 rounded-lg p-4 text-left">
-          <div className="flex items-center gap-2 mb-2">
-            <div className="w-2 h-2 rounded-full bg-emerald-400" />
-            <span className="text-xs text-emerald-400">Top Priority</span>
+        <div className="bg-slate-800/30 rounded-lg p-3 text-left">
+          <div className="flex items-center gap-2">
+            <svg className="w-4 h-4 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+            </svg>
+            <span className="text-xs text-emerald-400">Completed Mar 15</span>
           </div>
-          <p className="text-sm text-white font-medium">Reduce wait times during peak hours</p>
-          <p className="text-xs text-slate-400 mt-1">Mentioned in 47 reviews • High impact</p>
+          <p className="text-xs text-white mt-1">Added 2nd bartender for peak</p>
         </div>
       ),
     },
     {
       number: '04',
-      title: 'Take Action & Track',
-      description: 'Create tasks from recommendations, assign to your team, and watch your sentiment scores improve.',
+      title: 'Prove It Worked',
+      description: 'Watch the sentiment shift after your fix. "Service wait time sentiment: 6.8 → 8.4 in 6 weeks."',
       visual: (
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-3">
           <div className="text-center">
-            <div className="text-2xl font-bold text-amber-400">6.8</div>
-            <div className="text-xs text-slate-400">Before</div>
+            <div className="text-xl font-bold text-amber-400">6.8</div>
+            <div className="text-xs text-slate-500">Before</div>
           </div>
-          <svg className="w-8 h-8 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <svg className="w-6 h-6 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
           </svg>
           <div className="text-center">
-            <div className="text-2xl font-bold text-emerald-400">8.4</div>
-            <div className="text-xs text-slate-400">After</div>
+            <div className="text-xl font-bold text-emerald-400">8.4</div>
+            <div className="text-xs text-slate-500">After</div>
           </div>
         </div>
       ),
@@ -610,12 +604,12 @@ function HowItWorksSection() {
       
       <div className="section-container relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="inline-block text-emerald-400 text-sm font-semibold tracking-wider uppercase mb-4">How It Works</span>
+          <span className="inline-block text-emerald-400 text-sm font-semibold tracking-wider uppercase mb-4">The Closed Loop</span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
-            From chaos to clarity in <span className="gradient-text">four steps</span>
+            From complaint to <span className="gradient-text">proven improvement</span>
           </h2>
           <p className="text-lg text-slate-400">
-            Get up and running in minutes. Start seeing insights the same day.
+            This is the loop that makes the difference. Not just "here's what's wrong"—but proof your fixes worked.
           </p>
         </div>
         
@@ -721,19 +715,19 @@ function MultiBranchSection() {
           <div className="order-1 lg:order-2">
             <span className="inline-block text-emerald-400 text-sm font-semibold tracking-wider uppercase mb-4">For Franchise Operators</span>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
-              One dashboard for <span className="gradient-text">all your locations</span>
+              Your operational <span className="gradient-text">system of record</span>
             </h2>
             <p className="text-lg text-slate-400 mb-8">
-              Managing multiple branches? Compare performance across locations, identify which branches 
-              need attention, and roll up reports for stakeholders.
+              Same brand, different issues at each location. Pickd becomes the single source of truth for 
+              customer sentiment across your entire operation.
             </p>
             
             <div className="space-y-4">
               {[
-                { title: 'Branch Comparisons', description: 'See which locations are thriving and which need help at a glance.' },
-                { title: 'Roll-up Reports', description: 'Aggregate insights across all branches for executive summaries.' },
-                { title: 'Issue Heatmaps', description: 'Visualize problem areas across your entire operation.' },
-                { title: 'Per-Branch Tasks', description: 'Assign location-specific action items to the right managers.' },
+                { title: 'Branch Benchmarking', description: 'Compare locations against each other and against similar restaurants in each market.' },
+                { title: 'Longitudinal Tracking', description: 'Sentiment history over months and years. See which branches are improving, which are declining.' },
+                { title: 'Issue Heatmaps', description: 'Instantly spot systemic issues—is "parking" a problem at Mall locations only?' },
+                { title: 'Institutional Memory', description: 'Every fix, every task, every improvement documented. Staff change, knowledge stays.' },
               ].map((item, index) => (
                 <div key={index} className="flex gap-4 items-start">
                   <div className="flex-shrink-0 w-6 h-6 rounded-full bg-emerald-500/20 flex items-center justify-center mt-0.5">
@@ -761,19 +755,19 @@ function MultiBranchSection() {
 function TestimonialsSection() {
   const testimonials = [
     {
-      quote: "We went from drowning in reviews to having a clear action plan in one afternoon. Our service scores jumped 1.5 points in two months.",
+      quote: "Other tools just gave us reports. Pickd gave us a system. We fixed the noise issue, marked it complete, and watched the scores climb. That's proof we can show our landlord.",
       author: "Sarah M.",
       role: "Owner, The Garden Bistro",
       avatar: "SM",
     },
     {
-      quote: "Managing 12 locations used to be a nightmare. Now I can see exactly which branches need attention and why. Game changer.",
+      quote: "12 locations, each with different problems. Now I can see the heatmap and know exactly which branch needs what. The operational memory alone is worth it—nothing gets forgotten.",
       author: "James K.",
       role: "Operations Director, Urban Eats Group",
       avatar: "JK",
     },
     {
-      quote: "The before/after tracking is incredible. We can actually prove to investors that our improvements are working.",
+      quote: "We showed investors the before/after on our wait time scores. 6.8 to 8.4 in two months. Hard numbers, not just stories. That's what got us the funding.",
       author: "Michelle R.",
       role: "GM, Coastal Kitchen",
       avatar: "MR",
@@ -832,11 +826,11 @@ function CTASection() {
       <div className="section-container relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-6">
-            Ready to get <span className="gradient-text">Pickd first</span>?
+            Stop guessing. <span className="gradient-text">Start proving.</span>
           </h2>
           <p className="text-xl text-slate-400 mb-10 max-w-2xl mx-auto">
-            Join hundreds of restaurants using Pickd to understand their customers better, 
-            fix what matters, and rise to the top.
+            Join restaurants who don't just read reviews—they act on them, track the fix, 
+            and prove it worked. Close the loop with Pickd.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
@@ -896,7 +890,7 @@ function Footer() {
               <span className="text-xl font-bold text-white">Pickd</span>
             </a>
             <p className="text-slate-400 max-w-sm mb-6">
-              Review intelligence that helps restaurants understand what customers really think and take action to improve.
+              The operational system that connects customer feedback to fixes to measurable improvement. Not just insights—proof.
             </p>
             <div className="flex gap-4">
               {['twitter', 'linkedin', 'facebook'].map((social) => (
